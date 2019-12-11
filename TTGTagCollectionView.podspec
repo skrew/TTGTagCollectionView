@@ -13,7 +13,8 @@ Pod::Spec.new do |s|
   s.source           = { :git => "https://github.com/zekunyan/TTGTagCollectionView.git", :tag => s.version.to_s }
   s.social_media_url = 'http://tutuge.me'
   
-  s.platform         = :ios, '7.0'
+  s.ios.deployment_target = '10.0'
+  s.tvos.deployment_target = '12.0'
   s.requires_arc     = true
 
   s.source_files = 'TTGTagCollectionView/Classes/**/*'
